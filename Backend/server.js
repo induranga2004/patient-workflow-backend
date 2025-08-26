@@ -2,6 +2,8 @@ require("dotenv").config();
 
 const express = require("express");
 const app = express();
+const cors= require('cors')
+
 
 const pool = require("./src/db/pool");
 
@@ -14,6 +16,7 @@ const appointmentRoutes = require("./src/routes/appointment");
 
 
 app.use(express.json());
+app.use(cors({origin:'http://localhost:3001'}))
 
 app.use("/api/doctors", doctorsRoutes);
 app.use("/api/appointments",appointmentRoutes);
