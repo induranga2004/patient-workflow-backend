@@ -1,0 +1,10 @@
+#Node modules
+node_modules/
+
+#env
+.env
+
+# PORT= 
+# DATABASE_URL=postgresql://<uname>:<pwd>@localhost:5432/hospitaldb
+# JWT_SECRET= "Add secret key"
+
